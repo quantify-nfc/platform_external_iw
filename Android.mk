@@ -10,7 +10,7 @@ LOCAL_SRC_FILES := \
   bitrate.c wowlan.c coalesce.c roc.c p2p.c vendor.c \
   sections.c
 
-LOCAL_CFLAGS += -DCONFIG_LIBNL20
+LOCAL_CFLAGS += -D_GNU_SOURCE -DCONFIG_LIBNL20
 
 # Silence some warnings for now. Needs to be fixed upstream. b/26105799
 LOCAL_CFLAGS += -Wno-unused-parameter \
